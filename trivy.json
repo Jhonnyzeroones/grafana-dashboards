@@ -1119,7 +1119,7 @@
           "refId": "A"
         }
       ],
-      "title": "Detaillled CVE vulnerabilities in $namespace namespace(s)",
+      "title": "Detailed CVE vulnerabilities in $namespace namespace(s)",
       "transformations": [
         {
           "id": "organize",
@@ -1291,7 +1291,7 @@
           },
           "editorMode": "code",
           "exemplar": false,
-          "expr": "sum(trivy_resource_configaudits{severity=\"Critical\", namespace=~\"$namespace\", cluster=~\"$cluster\"})",
+          "expr": "sum(trivy_resource_configaudits{severity=\"Critical\", namespace=~\"$namespace\"})",
           "instant": true,
           "interval": "$resolution",
           "legendFormat": "__auto",
